@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.SplashActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:gravity="center"
+        android:layout_weight=".8">
+        <TextView
+            android:fontFamily="@font/ssp_blod"
+            android:textSize="55sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="TMDb"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0.0dip"
+    android:layout_weight="1">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_splash"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="ninja.json"
+        app:lottie_loop="false" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lav_splash"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/gp_dn" />
+</RelativeLayout>
+</LinearLayout>
